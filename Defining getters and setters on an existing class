@@ -1,0 +1,10 @@
+Object.defineProperty(Person.prototype, 'name', {
+  get() {
+    return this.getName();
+  },
+  set(name) {
+    let n = name.split(' ');
+    this.firstName = n[0];
+    this.lastName = n[1];
+  }
+});
